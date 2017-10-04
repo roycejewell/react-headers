@@ -48,18 +48,7 @@ module.exports = {
       if (err) {
         console.log(err);
       }
-      else {
-        console.log('');
-        console.log('  /$$$$$$$    /$$$$$$   /$$   /$$   /$$$$$$ ');
-        console.log(' | $$__  $$  /$$__  $$ | $$  | $$  /$$__  $$');
-        console.log(' | $$  \\ $$ | $$  \\ $$ | $$  | $$ | $$  \\__/');
-        console.log(' | $$$$$$$  | $$$$$$$$ | $$  | $$ |  $$$$$$ ');
-        console.log(' | $$__  $$ | $$__  $$ | $$  | $$  \\____  $$');
-        console.log(' | $$  \\ $$ | $$  | $$ | $$  | $$  /$$  \\ $$');
-        console.log(' | $$$$$$$/ | $$  | $$ |  $$$$$$/|   $$$$$$/');
-        console.log(' |_______/  |__/  |__/  \\______/   \\______/ ');
-      }
-      console.info('\n=> Baus Server is running %s on %s:%s\n', env, host, port);
+      console.info('\n=> Server is running %s on %s:%s\n', env, host, port);
     });
   }
 }
