@@ -51,7 +51,7 @@ class MainWrapper extends Component {
 
   render () {
     return (
-      <div style={{minHeight: windowHeight(768, -275, 150)}}>
+      <div>
         <Header
           location={ this.props.location }
         />
@@ -60,7 +60,8 @@ class MainWrapper extends Component {
           role="main"
           aria-live='polite'
           aria-relevant='additions removals'
-          className='clearfix'>
+          className='clearfix'
+          style={{minHeight: windowHeight(768, -100, 150)}}>
           { renderChildren(this.props) }
         </main>
         <Footer />
