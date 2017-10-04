@@ -103,7 +103,3 @@ In order to load CSS inline and prevent any FOUC both configs set a `process.env
     require('../style/MyComponent.scss');
   }
 ```
-
-### TODO
-- TDD / BDD
-- Split code into chunks for different pages with webpack and include through [react router](https://github.com/rackt/react-router/blob/master/docs/guides/advanced/DynamicRouting.md)
