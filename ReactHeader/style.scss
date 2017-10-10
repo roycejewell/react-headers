@@ -1,0 +1,25 @@
+@import 'styles/variables.scss';
+@import 'styles/mixins/mq.scss';
+
+.react-header-container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+.react-header {
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes slideInUp {
+  0% {
+    opacity: 1;
+    transform: translateY(60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

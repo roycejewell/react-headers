@@ -1,15 +1,15 @@
 {
-  "name": "brandon-jewell-react-redux-boilerplate",
-  "version": "1.0.1",
-  "private": true,
+  "name": "react-animated-header",
+  "version": "1.0.12",
+  "private": false,
   "main": "index.js",
   "scripts": {
     "dev": "npm run clean && NODE_ENV=development nodemon server/index.js --watch server",
     "postinstall": "npm run dist",
     "dist": "npm run clean && npm run webpack-prod",
     "clean": "rm -rf public/dist && mkdir public/dist",
-    "eslint-all": "./node_modules/.bin/eslint --ext .jsx --ext .js . ; exit 0",
-    "eslint-file": "./node_modules/.bin/eslint ",
+    "eslint-all": "eslint --ext .jsx --ext .js . ; exit 0",
+    "eslint-file": "eslint ",
     "webpack-prod": "NODE_ENV=production webpack -p --config ./webpack/production.config.js --progress --colors",
     "start": "npm run dev",
     "prod": "NODE_ENV=production node server/index.js",
@@ -19,7 +19,10 @@
     "node": "=6.9.5",
     "npm": "=3.10.10"
   },
-  "repository": "git@github.com:Roycejewell/react-redux-boilerplate.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Roycejewell/react-headers.git"
+  },
   "dependencies": {
     "autoprefixer": "^7.1.1",
     "babel-loader": "^7.1.0",
@@ -91,5 +94,10 @@
     "webpack-hot-middleware": "^2.17.0"
   },
   "author": "Brandon Jewell <yo@brandonjewell.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "description": "Higher order react component for header animations.",
+  "bugs": {
+    "url": "https://github.com/Roycejewell/react-headers/issues"
+  },
+  "homepage": "https://github.com/Roycejewell/react-headers#readme"
 }
